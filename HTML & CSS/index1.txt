@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Document</title>
+</head>
+<body style="background-color:lightblue;"></body>
+
+<h1>FULL STACK DEVELOPMENT</h1>
+<h2>FULL STACK DEVELOPMENT</h2>
+<h3>FULL STACK DEVELOPMENT</h3>
+<h4>FULL STACK DEVELOPMENT</h4>
+<h5>FULL STACK DEVELOPMENT</h5>
+<h6>FULL STACK DEVELOPMENT</h6>
+<p>Welcome to our FULL STACK DEVELOPMENT class. Here we are going to see about MERN Stack, Both Front-end and Back-end</p>
+<img src="C:\Users\ABIRAKI\Downloads\download.png" >
+<img src="D:\Personal\My Wallpapers\MECH.jpg" width="500" height="500">
+<div>A paragraph is a series of sentences that are organized and coherent, and are all related to a single topic. Almost every piece of writing you do that is longer than a few sentences should be organized into paragraphs.</div>
+<b>Abilash</b>
+<strong>Maha</strong>
+</body>
+</html>

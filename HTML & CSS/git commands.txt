@@ -1,0 +1,13 @@
+git config --version
+git config --global user.name "abilashmaha2003"
+git config --global user.email "abilashmaha2003@gmail.com"
+git config --list
+
+git init
+git status
+git add (file_name.extension)
+git add .
+git commit -m
+git commit -m "version-1"
+git log
+git remote add origin https://github.com/abilashmaha2003/Full-Stack-HTML-CSS.git
