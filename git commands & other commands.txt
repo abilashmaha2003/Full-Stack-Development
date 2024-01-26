@@ -1,0 +1,51 @@
+git config --version
+git config --global user.name "abilashmaha2003"
+git config --global user.email "abilashmaha2003@gmail.com"
+git config --list
+
+git init
+git status
+git add (file_name.extension)
+git add .
+git commit -m "version-1"
+git log
+git remote add origin (repository url_address)
+git push origin master
+
+git commit -m " "						
+git push origin master
+
+
+npm install react-router-dom
+npm install react-router-dom
+
+
+import {BrowserRouter,Routes,Route} from "react-router-dom"
+
+<BrowserRouter> ,<Routes> , <Router>
+
+rfc --> for component creation
+
+
+
+// initalizing the repo
+git init
+// it is used to see the changes of the repo
+git status
+// adding files
+git add <file_name>
+// adding all files which is present in the directory
+git add .
+// commit 
+git commit -m "your commit message"
+// adding a remote repository, only for first time
+git remote add origin https://github.com/OWNER/REPOSITORY.git
+// git push
+git push origin main or master
+
+//to create a react app
+npx create-react-app 'name'  --> eg: npx create-react-app app
+// start the app
+npm start
+// install npm package 
+npm install <package-name>

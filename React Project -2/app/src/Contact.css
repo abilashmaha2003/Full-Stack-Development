@@ -1,0 +1,11 @@
+.p1{
+    text-align: center;
+    width: 700px;
+    padding: 50px;
+    border-radius: 9px;
+    background-color:  rgb(109, 190, 236);;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}

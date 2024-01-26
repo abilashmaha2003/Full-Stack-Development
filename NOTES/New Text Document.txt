@@ -1,0 +1,351 @@
+const map = new Map()
+undefined
+map.set("MECH",9)
+Map(1) {'MECH' => 9}
+map.set("CIVIL",11)
+Map(2) {'MECH' => 9, 'CIVIL' => 11}
+map.set("EIE",10)
+Map(3) {'MECH' => 9, 'CIVIL' => 11, 'EIE' => 10}
+map.set("EIE",15)
+Map(3) {'MECH' => 9, 'CIVIL' => 11, 'EIE' => 15}
+map.get("MECH")
+9
+map.delete("EIE")
+true
+map.has("EIE")
+false
+map.has("MECH")
+true
+map.size
+2
+map.forEach(function(value,key){
+	console.log(key+" "+value)
+})
+VM714:2 MECH 9
+VM714:2 CIVIL 11
+undefined
+text=''
+''
+        for(const x of map.entries()){
+            text = text + x;
+        }
+'MECH,9CIVIL,11'
+    for(const x of map.entries()){
+        console.log(x);
+    }
+VM1039:2 (2) ['MECH', 9]
+VM1039:2 (2) ['CIVIL', 11]
+undefined
+const m = new Map([["mech",1],["food",2],["EEE",13]]])
+VM1183:1 Uncaught SyntaxError: missing ) after argument list
+const m = new Map([["mech",1],["food",2],["EEE",13]])
+undefined
+m
+Map(3) {'mech' => 1, 'food' => 2, 'EEE' => 13}
+const m = new Set(["mech",1],["food",2],["EEE",13])
+undefined
+m
+Set(2) {'mech', 1}
+const m = new Set(["mech",1,2,3,4])
+undefined
+m
+Set(5) {'mech', 1, 2, 3, 4}
+const m = new Set(["food",23,44,55)
+VM1292:1 Uncaught SyntaxError: Unexpected token ')'
+const m = new Set(["food",23,44,55])
+undefined
+m
+Set(4) {'food', 23, 44, 55}
+Set.forEach(function(value,key){
+	console.log(key+" "+value)
+})
+VM1321:1 Uncaught TypeError: Set.forEach is not a function
+    at <anonymous>:1:5
+(anonymous) @ VM1321:1
+const set = new Set();
+undefined
+set.add("GTA 5")
+Set(1) {'GTA 5'}
+set.add("RDR2")
+Set(2) {'GTA 5', 'RDR2'}
+set.add("Call of Duty")
+Set(3) {'GTA 5', 'RDR2', 'Call of Duty'}
+set.add("Far cry 5")
+Set(4) {'GTA 5', 'RDR2', 'Call of Duty', 'Far cry 5'}
+set.add("Call of Duty")
+Set(4) {'GTA 5', 'RDR2', 'Call of Duty', 'Far cry 5'}
+set.delete("Far cry 5")
+true
+set
+Set(3) {'GTA 5', 'RDR2', 'Call of Duty'}
+set.delete("Far cry 5")
+false
+set.forEach(function(value){
+    console.log(value);
+}
+VM1946:3 Uncaught SyntaxError: missing ) after argument list
+set.forEach(function(value){
+    console.log(value);
+})
+VM1985:2 GTA 5
+VM1985:2 RDR2
+VM1985:2 Call of Duty
+undefined
+for(const y of set.entries()){
+        console.log(y);
+    }
+VM2009:2 (2) ['GTA 5', 'GTA 5']
+VM2009:2 (2) ['RDR2', 'RDR2']
+VM2009:2 (2) ['Call of Duty', 'Call of Duty']
+undefined
+set.s
+undefined
+set.size
+3
+for(const y of set.values()){
+        console.log(y);
+    }
+VM2062:2 GTA 5
+VM2062:2 RDR2
+VM2062:2 Call of Duty
+undefined
+console.log(7)
+setTimeout(function(){
+    console.log(18)
+},1000)
+VM2313:1 7
+1
+VM2313:3 18
+console.log(7)
+setTimeout(function(){
+    console.log(18)
+},2000)
+VM2321:1 7
+2
+VM2321:3 18
+console.log(7)
+setTimeout(function(){
+    console.log(18)
+},1000)
+VM2326:1 7
+3
+VM2326:3 18
+console.log(7)
+setTimeout(function(){
+    console.log(18)
+},5000)
+VM2334:1 7
+4
+VM2334:3 18
+function greetingAfterSometime(name,callback){
+setTimeout(function(){
+console.log("Hello"+name+"");
+callback();
+},2000);
+}
+function say(){
+console.log("Good bye")
+}
+greetingAfterSometime("dude",say);
+undefined
+VM2338:3 Hellodude
+VM2338:8 Good bye
+console.log(7)
+setTimeout(function(){
+    console.log(18)
+},5000)
+VM2342:1 7
+6
+VM2342:3 18
+setTimeout(()  {
+  console.log("this is the first message");
+}, 5000);
+setTimeout(()  {
+  console.log("this is the second message");
+}, 3000);
+setTimeout(()  {
+  console.log("this is the third message");
+}, 1000);
+VM2353:1 Uncaught SyntaxError: Unexpected token ')'
+setTimeout(() => {
+  console.log("this is the first message");
+}, 5000);
+setTimeout(() => {
+  console.log("this is the second message");
+}, 3000);
+setTimeout(() => {
+  console.log("this is the third message");
+}, 1000);
+9
+VM2357:8 this is the third message
+VM2357:5 this is the second message
+VM2357:2 this is the first message
+function isAuthorized(){
+return Math.random()>0.5;
+function checkAuthorization(){
+return new Promise(function(resolve,reject){
+setTimeout(function(){
+if(isAuthorized()){
+resolve("Authorized");
+} else {
+reject("Unauthorized");
+}},1000);
+}};
+} checkAuthorization().then(function(message) { console.log(message);
+}).catch(function(error) { console.error(error);});
+VM2361:11 Uncaught SyntaxError: missing ) after argument list
+function isAuthorized(){
+return Math.random()>0.5;
+function checkAuthorization(){
+return new Promise(function(resolve,reject){
+setTimeout(function(){
+if(isAuthorized()){
+resolve("Authorized");
+} else {
+reject("Unauthorized");
+}},1000);
+}};
+} checkAuthorization().then(function(message) { console.log(message);
+}}.catch(function(error) { console.error(error);});
+VM2365:11 Uncaught SyntaxError: missing ) after argument list
+function isAuthorized(){
+return Math.random()>0.5;
+}
+function checkAuthorization(){
+return new Promise(function(resolve,reject){
+setTimeout(function(){
+if(isAuthorized()){
+resolve("Authorized");
+} else {
+reject("Unauthorized");
+}},1000);
+}};
+} checkAuthorization().then(function(message) { console.log(message);
+}}.catch(function(error) { console.error(error);});
+VM2369:12 Uncaught SyntaxError: missing ) after argument list
+function isAuthorized(){
+return Math.random()>0.5;
+}
+function checkAuthorization(){
+return new Promise(function(resolve,reject){
+setTimeout(function(){
+if(isAuthorized()){
+resolve("Authorized");
+} else {
+reject("Unauthorized");
+}},1000);
+}};
+} checkAuthorization().then(function(message) { console.log(message);
+}).catch(function(error) { console.error(error);});
+VM2376:12 Uncaught SyntaxError: missing ) after argument list
+function isAuthorized(){
+return Math.random()>0.5;
+}
+function checkAuthorization(){
+return new Promise(function(resolve,reject){
+    setTimeout(function(){
+        if(isAuthorized()){
+            resolve("Authorized");
+        } else {
+            reject("Unauthorized");
+        }},1000);
+});
+} checkAuthorization().then(function(message) {
+    console.log(message); }).catch(function(error) {
+    console.error(error);});
+    
+}
+VM3068:17 Uncaught SyntaxError: Unexpected token '}'
+unction isAuthorized(){
+return Math.random()>0.5;
+}
+function checkAuthorization(){
+return new Promise(function(resolve,reject){
+    setTimeout(function(){
+        if(isAuthorized()){
+            resolve("Authorized");
+        } else {
+            reject("Unauthorized");
+        }},1000);
+});
+} checkAuthorization().then(function(message) {
+    console.log(message); }).catch(function(error) {
+    console.error(error);});
+VM3072:1 Uncaught SyntaxError: Unexpected identifier 'isAuthorized'
+function isAuthorized(){
+return Math.random()>0.5;
+}
+function checkAuthorization(){
+return new Promise(function(resolve,reject){
+    setTimeout(function(){
+        if(isAuthorized()){
+            resolve("Authorized");
+        } else {
+            reject("Unauthorized");
+        }},1000);
+});
+} checkAuthorization().then(function(message) {
+    console.log(message); }).catch(function(error) {
+    console.error(error);});
+Promise {<pending>}
+VM3081:15 Unauthorized
+(anonymous) @ VM3081:15
+Promise.catch (async)
+(anonymous) @ VM3081:14
+function isAuthorized(){
+return Math.random()>0.5;
+}
+function checkAuthorization(){
+return new Promise(function(resolve,reject){
+    setTimeout(function(){
+        if(isAuthorized()){
+            resolve("Authorized");
+        } else {
+            reject("Unauthorized");
+        }},1000);
+});
+} checkAuthorization().then(function(message) {
+    console.log(message); }).catch(function(error) {
+    console.error(error);});
+Promise {<pending>}
+VM3090:15 Unauthorized
+(anonymous) @ VM3090:15
+Promise.catch (async)
+(anonymous) @ VM3090:14
+function isAuthorized(){
+return Math.random()<0.5;
+}
+function checkAuthorization(){
+return new Promise(function(resolve,reject){
+    setTimeout(function(){
+        if(isAuthorized()){
+            resolve("Authorized");
+        } else {
+            reject("Unauthorized");
+        }},1000);
+});
+} checkAuthorization().then(function(message) {
+    console.log(message); }).catch(function(error) {
+    console.error(error);});
+Promise {<pending>}
+VM3097:15 Unauthorized
+(anonymous) @ VM3097:15
+Promise.catch (async)
+(anonymous) @ VM3097:14
+function isAuthorized(){
+return Math.random()>0.5;
+}
+function checkAuthorization(){
+return new Promise(function(resolve,reject){
+    setTimeout(function(){
+        if(isAuthorized()){
+            resolve("Authorized");
+        } else {
+            reject("Unauthorized");
+        }},1000);
+});
+} checkAuthorization().then(function(message) {
+    console.log(message); }).catch(function(error) {
+    console.error(error);});
+Promise {<pending>}[[Prototype]]: Promise[[PromiseState]]: "fulfilled"[[PromiseResult]]: undefined
+VM3101:14 Authorized

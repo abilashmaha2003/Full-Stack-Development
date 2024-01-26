@@ -1,0 +1,229 @@
+VARIABLES:
+=============
+*variable name can contain numbers,digits and characters. 
+*Variable name should start with a letter. *It can be start with _ ,$
+*names are case sensitive and should not contain any space.
+*keywords cannot be used as variable names. 
+*names should be in camel case, Eg: fullStackDev.
+*variable name length should be 16.
+*variables can be declared in 4 ways automatically
+	-->using var
+	-->using let
+	-->using const
+*always use const if the value should not be changed.
+*always use const if the type should not be changed especially arrays and objects.
+*Only use 'let' if you can't use const.
+--> var - if you must support old browser
+
+DATATYPE:
+===========
+*Precedence --> division,multiplication (both have same precedence)
+	      --> addition , subtraction
+*If both multiplication and division appears in same line: It starts to execute the operation from LEFT to RIGHT.
+Eg: let s=7*4/2;s  -----> Ans: 14
+
+----->Symbol DataType:
+	eg: const mySymbol = Symbol( );
+	*It is useful for creating APIs and when we want to assign a unique identifier to an object.
+------>Typeof DataType:
+	eg: typeof null --returns the type. *It is used to know about the type of the object.
+------>instanceof - returns true if an object is an instance of an object type.
+
+UNDEFINED:
+===========
+* Any variable without a value has to be undefined.
+*Any variable can be emptified by setting the value to undefined (value can be erased).
+--->In JavaScript, undefined is a primitive value that represents the absence of any value,
+
+eg: car = "BMW"
+       'BMW'
+       car = undefined
+
+OBJECT CREATION AND ACCESS:
+===========================
+* eg: const person={firstName:"Abilash",lastName:"Mahalingam"} -----> here firstName and lastName are ATTRIBUTES.
+how to access? --> it can be accessed by using object name ( here for the above example object name is 'person').
+	          --> also can be accessed by using object_name.attribute_name --(eg: person.firstName).
+	          --> the value can also be modified (eg. person.firstName="Rakesh") thus the firstname gets changed .
+	          -->	object_name['attribute_name] == another way to access . eg: person['firstName'].
+
+OPERATORS:
+============
+* Arithmetic operators --> (+,-,*,/,%)
+* Relational operators -->(<,>,<=,>=,==,!=)
+* Logical operators --> (&& , || , ! )
+* Bitwise operators --> ( << , >> )
+* Assignment operator --> ( = , +=, -=,*=, /= )
+* Ternary operator --> syntax: (condition)?statement-1:statement-2
+
+ARRAY:
+======
+SYNTAX: 
+--->const array_name = [ele-1,ele-2,ele-3];
+---> array_name[index_value]="element"
+---> const array_name = new Array(ele-1,ele-2,ele-3);
+---> array_name[index]="element-name" --- (by using this,, we can add an new array element or modify the existing array element).
+
+* splice : This is used to remove an element from the array. SYNTAX: array-name.splice(n,1) --> where n is the index of the element which is to be deleted.
+	Eg: const bikes = ["BMW","RE","HONDA","TVS"]
+	       bikes.splice(3,1)
+
+* Typecast: array-name.toString( ) ----> is used to convert an array to string.
+
+
+CONDITIONAL STATEMENTS:
+-------------------------------------------
+* if-else Statement:
+	SYNTAX: if (condition ){
+			console.log("statement")
+                                                         }
+		else{ console.log("statement")};
+
+
+* if -else if - else Statement:
+	SYNTAX:
+		if (condition)
+		{
+			console.log("statement-1")
+		}
+		else if (condition)
+		{
+			console.log("statement-2")
+		}
+		else
+		{
+			console.log("statement-3")
+		};
+* forEach:
+	
+================================================================================
+function:
+syntax: function function_name(arguments){
+			//statements;
+			}
+* then the function is to be called by using the function-name that we gave.
+
+function add(a,b){
+let k=3;	//local variable
+console.log(k);
+return a+b;
+}
+let k=3;	//global variable
+add(4,5)
+function add(a,b)
+{console.log(k);}
+add(4,5)
+
+ANS: 3 
+         3
+================================================================================
+Problem Solving: (topics) Leetcode and other coding platforms:
+*Arrays
+*Strings
+*Linked list
+*Tree 
+*Graph
+=================================================================================
+Map:
+*map.set --> is used to add a value and also to modify the value.
+SYNTAX : to create a map:---> const map = new Map( )
+      ---> after creation we can add elements by --> map.set("MECH",9) ---> where MECH - key , 9 - value.
+
+*map.get --> used to get the value ---------> syntax: map.get("MECH")  == returns the value of MECH.
+*map.delete --> used to delete the value ---------> syntax: map.delete("EIE") == deletes the EIE (both key & value).
+						* returns true (denotes the element is deleted)
+						* returns false --- (the value was alreadu deleted.)
+*map.has ---> used to check whether the value is present or not ----> map.has("EIE") ====== returns true if the value is present , otherwise it returns false.
+*map.size ---> Returns the size.
+*map.forEach(function(value,key){
+	console.log(key+" "+value)
+})      --------------> uses the forEach loop statement and it returns the key and value.
+*for(const x of map.entries()){
+        console.log(x);
+    }
+* const m = new Map([["mech",1],["food",2],["EEE",13]]) ---> another way to create a map.
+
+=====================================================================================
+Set :
+It does not allow duplicate.
+* const m = new Set(["mech",1],["food",2],["EEE",13])  ---> the value is converted to set.=== OUTPUT:Set(2) {'mech', 1} , (here it converts the first value to set).
+*const m = new Set(["food",23,44,55]) ---> converts to set === OUTPUT: Set(4) {'food', 23, 44, 55}
+* const set = new Set( ) ---> to create a new set.
+* set.add("GTA 5") ---> it adds the element to the set.
+*set.delete("Far cry 5") ---> it deletes the element from the set. ( same working as of map.delete function ).
+*set.forEach(function(value){
+    console.log(value);
+}) -------> uses forEach statement to print the set values.
+*for(const y of set.entries()){
+        console.log(y);
+    }
+OUTPUT:	['GTA 5', 'GTA 5']
+	['RDR2', 'RDR2']
+	['Call of Duty', 'Call of Duty']
+*set.size --> returns the size of the set.   OUTPUT: 3
+*for(const y of set.values()){
+        console.log(y);
+    }
+OUTPUT:	GTA 5
+	 RDR2
+	 Call of Duty
+* setTimeout(): 
+	
+
+function greetingAfterSometime(name,callback){
+setTimeout(function(){
+console.log("Hello"+name+"");
+callback();
+},2000);
+}
+function say(){
+console.log("Good bye")
+}
+greetingAfterSometime("dude",say);
+
+Promises:
+eg:
+function isAuthorized(){
+return Math.random()>0.5;
+}
+
+function checkAuthorization(){
+return new Promise(function(resolve,reject){
+    setTimeout(function(){
+        if(isAuthorized()){
+            resolve("Authorized");
+        } else {
+            reject("Unauthorized");
+        }},1000);
+});
+} 
+
+checkAuthorization().then(function(message) {
+    console.log(message); }).catch(function(error) {
+    console.error(error);});
+=================================================================================
+async function girlsAsyncFunction(){
+return new Promise 
+async function boysAsyncFunction(){
+let myPromise = new Promise(function(resolve){
+setTimeout(function(){
+resolve("This boys task");
+},3000);
+});
+
+const[result1,result2]=await
+Promise.all([myPromise
+==================================================================================
+DOM --- Document Object Module --> UI Representation , Tree Structure.
+
+REACT:  
+--> virtual DOM
+--> 2 DOM tree ( previous and current ) 
+--> Faster and Flexible
+=========================================================
+Node.JS -> where Javascript can run lively in the server.
+NPM is a package management that is used to install, uninstall, and update Javascript packages on your workstation
+whereas NPX is a package executer that is used to directly execute Javascript packages without installing them.
+
+Component --> an object consists of set of functions.
+

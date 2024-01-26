@@ -1,0 +1,63 @@
+DOM --- Document Object Module --> UI Representation , Tree Structure.
+
+REACT:  --> framework for JavaScript , consists of libraries , front-end development.
+--> virtual DOM
+--> 2 DOM tree ( previous-state and current-state ) 
+--> Faster and Flexible
+
+src: 
+App.js (namma create panna react_name) ---> start coding.
+App.css --> remove the initial coding.
+index.css --> remove the initial coding.
+
+--> Class Component , (Functional Component.)
+
+rfc
+ccc
+
+PRGM:
+import React from 'react'
+export default function Hello() {
+  return (
+    <div>
+        <p>WELCOME TO FULL STACK DEVELOPMENT !!!</p>
+    </div>
+  )
+}
+
+MAIN:
+import React from 'react'
+import Hello from './Hello'
+export default function App() {
+  return (
+    <div>
+      <Hello/>
+      <Hello/>
+      <Hello/>
+      <Hello/>
+      <Hello/>
+    </div>
+  )
+} 
+
+ES6 --> a Standard in React.
+
+PROPS: --> property
+
+* in Arrow function , only one data can be passed.
+
+JSX:
+Javacsript XML  -> html code written in return function ( see the above main example ).
+*Destructuring
+*Spread operator
+
+STATE: temporary values
+
+
+HOOKS:
+*  Hooks are new addition in React 16.8
+*  They let you use state and other React features without writing a class.
+
+useState --> functional component --useState is React Hook that allows you to add state to a functional component. It returns an array with two values: the current state and a function to update it. The Hook takes an initial state value as an argument and returns an updated state value whenever the setter function is called.
+useEffect --> is a React Hook that lets you synchronize a component with an external system.Enables performing side effects in your components, such as data fetching, subscriptions, or manually changing the DOM.
+useReducer --> declares a state variable with the update logic inside a reducer function.An alternative to 'useState' for managing more complex state logic.

@@ -1,0 +1,22 @@
+
+.nav-bar {
+    display: flex;
+    padding: 5px;
+    background-color: aquamarine;
+    list-style-type: none;
+    justify-content: space-evenly;
+       
+}
+*{
+    font-family: 'Tw Cen Mt';
+    font-size: 25px;    
+}
+.nav-link1{
+    text-decoration: none;
+}
+.nav-link2{
+    text-decoration: none;
+}
+.nav-link3{
+    text-decoration: none;
+}

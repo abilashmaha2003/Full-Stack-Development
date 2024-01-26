@@ -1,0 +1,13 @@
+.counter-box{
+    margin-top: 10px;
+    background-color:antiquewhite;
+    font-family: 'Tw Cen Mt';
+    padding: 10px;
+    text-align: center;
+}
+.button-container{
+    padding: 10px ;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
